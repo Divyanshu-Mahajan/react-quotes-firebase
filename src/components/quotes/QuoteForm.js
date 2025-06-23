@@ -86,7 +86,9 @@ const QuoteForm = (props) => {
           <textarea id="text" rows="5" ref={textInputRef} style={inputStyle}></textarea>
         </div>
         <div>
-          <button type="submit" style={buttonStyle}>Add Quote</button>
+          <button type="submit" style={buttonStyle} disabled={props.isLoading}>
+            Add Quote
+          </button>
         </div>
       </form>
     </Card>
